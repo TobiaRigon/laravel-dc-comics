@@ -20,7 +20,7 @@ class ComicFactory extends Factory
             'title' => fake() -> words(3, true),
             'description'=> fake() ->  paragraph,
             'author'=> fake() -> name,
-            'price'=> fake() -> randomFloat(2, 5, 100),
+            'price'=> fake() -> randomFloat(2, 5, 25),
         ];
     }
 }
