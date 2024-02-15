@@ -3,17 +3,18 @@
     <title>Home</title>
 @endsection
 @section('content')
-    <h1>Comics: {{count($comics)}}</h1>
-
-    <ul>
-        @foreach ($comics as  $comic)
-
-        <li>
-            {{$comic -> title}}
-            {{$comic -> author}}
-
-        </li>
-
-        @endforeach
-    </ul>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">Comics: {{ count($comics) }}</h1>
+            <ul class="list-group">
+                @foreach ($comics as $comic)
+                <li class="list-group-item">
+                    <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+</div>
 @endsection
