@@ -32,6 +32,11 @@ class="container"
     </div>
 
     <button type="submit" class="btn btn-primary">CREATE</button>
+
+    <div>
+        <a href="{{ route('comics.index') }}" class="btn btn-primary mt-3">Back to Index</a>
+    </div>
+
 </form>
 
 @endsection
