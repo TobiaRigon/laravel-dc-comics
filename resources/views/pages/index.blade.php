@@ -12,6 +12,17 @@
                 @foreach ($comics as $comic)
                 <li class="list-group-item">
                     <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
+                    <form
+                    class="d-inline-block "
+                    action="{{route ('comics.destroy', $comic -> id)}}"
+                    method="POST"
+                    >
+                    @csrf
+                    @method('DELETE')
+
+
+                        <input class="btn btn-danger" type="submit" value="X">
+                    </form>
                 </li>
                 @endforeach
             </ul>

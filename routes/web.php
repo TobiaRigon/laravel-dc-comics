@@ -13,3 +13,6 @@ Route::get ('/comics/create' , [ComicController :: class , 'create']) -> name ('
 Route::post('/comics' , [ComicController :: class , 'store']) -> name ('comics.store');
 
 Route::get('/comics/{id}' , [ComicController :: class, 'show']) -> name ('comics.show');
+
+
+Route::delete('/comics/{id}' , [ComicController :: class, 'destroy']) -> name('comics.destroy');
