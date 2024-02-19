@@ -37,12 +37,12 @@
 
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <input value=" {{ $comic -> description}}" class="form-control" id="description" type="text" name="description"   rows="5"  ></input>
+            <textarea class="form-control" id="description" name="description" rows="5" required>{{ $comic->description }}</textarea>
         </div>
 
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input value=" {{ $comic -> price}}" type="text"  class="form-control" id="price" name="price" required>
+            <input value="{{ $comic->price }}" type="number" step="0.01" class="form-control" id="price" name="price" required>
         </div>
 
         <button type="submit" class="btn btn-success">EDIT</button>
