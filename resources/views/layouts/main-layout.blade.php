@@ -8,6 +8,14 @@
     @vite("resources/js/app.js")
 
     @yield('head')
+
+    <style>
+        body {
+            display: none;
+        }
+
+    </style>
+
 </head>
 <body>
     <div class="text-center">

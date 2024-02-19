@@ -12,20 +12,12 @@
                 @foreach ($comics as $comic)
                 <li class="list-group-item">
                     <a class="btn  d-block my-3 btn-outline-dark btn-lg" href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
+                    <div class="description">{{ $comic->description }}</div>
 
-                    <a
-                    href="{{route('comics.edit', $comic -> id)}}"
-                    class="btn btn-success"
-                    > EDIT</a>
-                    <form
-                    class="d-inline-block "
-                    action="{{route ('comics.destroy', $comic -> id)}}"
-                    method="POST"
-                    >
-                    @csrf
-                    @method('DELETE')
-
-
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-success">EDIT</a>
+                    <form class="d-inline-block" action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
                         <input class="btn btn-danger" type="submit" value="X">
                     </form>
                 </li>
