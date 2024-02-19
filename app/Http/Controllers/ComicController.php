@@ -90,6 +90,14 @@ class ComicController extends Controller
     {
         $comic = Comic :: find($id);
 
+        $data = $request -> validate( [
+
+            'title' => 'required|string|max:255|min:2',
+            'author' => 'required|string|max:255|min:2',
+            'description' => 'string',
+            'price' => 'required|numeric|min:0',
+        ]);
+
         $data = $request -> all();
 
         $comic -> title = $data['title'];
