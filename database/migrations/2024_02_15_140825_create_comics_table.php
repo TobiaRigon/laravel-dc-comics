@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('title');
-            $table->text('description')->nullable();
+            $table->text('description');
             $table->string('author');
             $table->decimal('price', 8, 2);
 

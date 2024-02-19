@@ -41,7 +41,7 @@ class ComicController extends Controller
      */
     public function store(ComicFormRequest $request)
     {
-        $data = $request -> all();
+        $data = $request->validated();
 
         $newComic = new Comic();
 
@@ -95,7 +95,7 @@ class ComicController extends Controller
         $data = $request -> all();
         $comic -> title = $data['title'];
         $comic -> author = $data['author'];
-        $comic -> description = $data['description'];
+        $comic -> description = $data['description'] ;
         $comic -> price = $data['price'];
 
         $comic -> save();

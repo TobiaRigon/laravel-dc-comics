@@ -37,7 +37,7 @@
 
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="description" name="description" rows="5" required>{{ $comic->description }}</textarea>
+            <textarea class="form-control" id="description" name="description" rows="5" >{{ $comic->description }}</textarea>
         </div>
 
         <div class="mb-3">
