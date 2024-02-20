@@ -10,7 +10,7 @@
     @yield('head')
 
     <style>
-        body {
+        .container {
             display: none;
         }
 

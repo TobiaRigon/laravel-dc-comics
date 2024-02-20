@@ -3,6 +3,11 @@
     <title>Home</title>
 @endsection
 @section('content')
+
+<div class="spinner-border my-5 load text-primary" role="status">
+    <span class="sr-only"></span>
+  </div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
