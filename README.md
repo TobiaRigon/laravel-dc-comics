@@ -13,6 +13,8 @@ This project, developed using Laravel 9, is an application for managing a comic 
 - **Validations**: Implements validations during comic creation and modification, providing clear and localized error messages.
 - **Custom FormRequests**: Uses custom FormRequests to validate input data.
 
+### Screenshot
+
 | HomePage                                                                                                                                                | Single                                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![](https://github.com/TobiaRigon/laravel-comics/blob/main/homepage.png?raw=true)](https://github.com/TobiaRigon/laravel-comics/blob/main/homepage.png?raw=true) | [![](https://github.com/TobiaRigon/laravel-comics/blob/main/single.png?raw=true)](https://github.com/TobiaRigon/laravel-comics/blob/main/single.png?raw=true) |
