@@ -12,3 +12,7 @@ This project, developed using Laravel 9, is an application for managing a comic 
 - **Delete Confirmation**: Utilizes JavaScript to request confirmation before deleting a comic.
 - **Validations**: Implements validations during comic creation and modification, providing clear and localized error messages.
 - **Custom FormRequests**: Uses custom FormRequests to validate input data.
+
+| HomePage                                                                                                                                                | Single                                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://github.com/TobiaRigon/laravel-comics/blob/main/homepage.png?raw=true)](https://github.com/TobiaRigon/laravel-comics/blob/main/homepage.png?raw=true) | [![](https://github.com/TobiaRigon/laravel-comics/blob/main/single.png?raw=true)](https://github.com/TobiaRigon/laravel-comics/blob/main/single.png?raw=true) |
